@@ -1,0 +1,19 @@
+{
+  "name": "easyclip",
+  "version": "1.0.0",
+  "description": "Copy string to clipboard. Just the basics. <1kB.",
+  "main": "./dist/easyclip.umd.js",
+  "license": "MIT",
+  "repository": "https://github.com/andygock/easyclip",
+  "scripts": {
+    "build": "rollup main.js --file dist/easyclip.umd.js --format umd --name easyclip && shx cp dist/*.js test/",
+    "test": "browsersync test -w"
+  },
+  "devDependencies": {
+    "rollup": "^2.23.0",
+    "shx": "^0.3.2"
+  },
+  "files": [
+    "dist"
+  ]
+}
