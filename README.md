@@ -1,4 +1,6 @@
-# easy-clip
+# easyclip
+
+Copy string to clipboard. Just the basics. < 1kB.
 
 ## Using in JS  projects
 
