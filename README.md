@@ -11,12 +11,12 @@ Install using npm or yarn
 import copy from 'easyclip';
 
 // copy 'Foobar' to clipboard
-const buttonHandler = () => copy('Foobar);
+const buttonHandler = () => copy('Foobar');
 ```
 
-See CodeSandbox example
+[CodeSandbox demo](https://codesandbox.io/s/easyclip-react-vn1p6)
 
-## Using in browser
+## Using in browser (HTML + Vanilla)
 
 ```html
 <!DOCTYPE html>
@@ -24,31 +24,37 @@ See CodeSandbox example
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>easy-clip test</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
   </head>
   <body>
     <div><button id="button">Copy date and time to clipboard</button></div>
     <p>Paste clipboard contents into textarea to test.</p>
     <textarea
+      id="textarea"
       rows="20"
       cols="80"
       placeholder="Paste text here for testing..."
     ></textarea>
     <script src="https://cdn.jsdelivr.net/npm/easyclip@latest/dist/easyclip.umd.js"></script>
     <script>
-        window.addEventListener("load", function () {
-        document
-            .getElementById("button")
-            .addEventListener("click", function () {
-                if (!easyclip) return alert("easyclip missing");
-                var str = new Date()
-                easyclip(str + "\n");
-            });
+      window.addEventListener("load", function() {
+        // wait until DOM is loaded before running scripts
+        document.getElementById("button").addEventListener("click", function() {
+          // copy current date to clipboard
+          easyclip(new Date() + "\n");
+
+          // bring focus to textarea for testing
+          document.getElementById("textarea").focus();
         });
+      });
     </script>
-</body>
+  </body>
 </html>
+
 ```
+
+[CodeSandbox demo](https://codesandbox.io/s/easyclip-vanilla-wjsm5)
 
 ## Building
 
