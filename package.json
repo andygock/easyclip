@@ -1,6 +1,6 @@
 {
   "name": "easyclip",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Copy string to clipboard. Just the basics. < 1kB.",
   "author": "Andy Gock <andy@gock.net>",
   "main": "./dist/easyclip.umd.js",
