@@ -4,6 +4,8 @@ Copy string to clipboard. Just the basics. < 1kB.
 
 ## Using in JS  projects
 
+[CodeSandbox demo](https://codesandbox.io/s/easyclip-react-vn1p6)
+
 Install using npm or yarn
 
     npm install easy-clip
@@ -16,9 +18,23 @@ import copy from 'easyclip';
 const buttonHandler = () => copy('Foobar');
 ```
 
-[CodeSandbox demo](https://codesandbox.io/s/easyclip-react-vn1p6)
-
 ## Using in browser (HTML + Vanilla)
+
+[CodeSandbox demo](https://codesandbox.io/s/easyclip-vanilla-wjsm5)
+
+Load script using
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/easyclip@latest/dist/easyclip.umd.js"></script>
+```
+
+Copy string to clipboard using function `easyclip()`
+
+```js
+easyclip("string to copy")
+```
+
+For a full example
 
 ```html
 <!DOCTYPE html>
@@ -56,8 +72,6 @@ const buttonHandler = () => copy('Foobar');
 
 ```
 
-[CodeSandbox demo](https://codesandbox.io/s/easyclip-vanilla-wjsm5)
-
 ## Building
 
 Install depedencies
@@ -68,4 +82,4 @@ Build to `dist/`
 
     yarn build
 
-The npm equivalents work should perfectly fine too.
+The npm equivalents should work perfectly fine too.
