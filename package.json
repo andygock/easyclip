@@ -8,7 +8,7 @@
   "repository": "https://github.com/andygock/easyclip",
   "scripts": {
     "build": "rollup -c && shx cp dist/*.js test/",
-    "test": "browsersync test -w"
+    "test": "browser-sync test -w"
   },
   "devDependencies": {
     "rollup": "^2.23.0",
