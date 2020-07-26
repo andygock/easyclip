@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": "https://github.com/andygock/easyclip",
   "scripts": {
-    "build": "rollup src/index.js --file dist/easyclip.umd.js --format umd --name easyclip && shx cp dist/*.js test/",
+    "build": "rollup -c && shx cp dist/*.js test/",
     "test": "browsersync test -w"
   },
   "devDependencies": {
