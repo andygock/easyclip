@@ -25,7 +25,7 @@ const buttonHandler = () => copy('Foobar');
 Load script using
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/easyclip@latest/dist/easyclip.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easyclip@latest/dist/easyclip.min.js"></script>
 ```
 
 Copy string to clipboard using function `easyclip()`
@@ -54,7 +54,7 @@ For a full example
       cols="80"
       placeholder="Paste text here for testing..."
     ></textarea>
-    <script src="https://cdn.jsdelivr.net/npm/easyclip@latest/dist/easyclip.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easyclip@latest/dist/easyclip.min.js"></script>
     <script>
       window.addEventListener("load", function() {
         // wait until DOM is loaded before running scripts
