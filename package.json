@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Copy string to clipboard. Just the basics. < 1kB.",
   "author": "Andy Gock <andy@gock.net>",
-  "main": "./dist/easyclip.umd.js",
+  "main": "./dist/easyclip.min.js",
   "license": "MIT",
   "repository": "https://github.com/andygock/easyclip",
   "scripts": {
